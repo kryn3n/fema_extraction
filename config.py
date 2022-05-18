@@ -1,11 +1,12 @@
 FEMA_REQUEST_URL = "https://msc.fema.gov/portal/advanceSearch"
 
-FEMA_REQUEST_HEADERS = {
-        "utf8": "✓",
+FEMA_DOWNLOAD_URL = "https://msc.fema.gov/portal/downloadProduct?productTypeID=NFHL&productSubTypeID=NFHL_STATE_DATA&productID={}"
+
+FEMA_REQUEST_DATA = {
         "affiliate": "fema",
         "selstate": "",
-        "selcounty": 0,
-        "selcommunity": 0,
+        "selcounty": "0",
+        "selcommunity": "0",
         "method": "search"
         }
 
