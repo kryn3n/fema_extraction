@@ -26,7 +26,7 @@ def download_latest_data(filename):
 
 
 def main():
-    state = "AL"
+    state = "FL"
     latest_data = get_latest_data(state)
     download_latest_data(latest_data)
 
