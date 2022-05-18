@@ -20,16 +20,17 @@ def get_latest_data(state):
 
 
 def download_latest_data(filename):
-    url = f"https://hazards.fema.gov/nfhlv2/output/State/{filename}"
-    print(f"Downloading filename from {url}...")
+    url = cfg.FEMA_DOWNLOAD_URL.format(filename)
+    print(f"Downloading {filename} from {url}...")
     requests.get(url)
 
 
 def main():
-    state = "FL"
+    state = "AL"
     latest_data = get_latest_data(state)
     download_latest_data(latest_data)
 
 
 main()
+
 

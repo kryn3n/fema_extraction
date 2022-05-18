@@ -1,6 +1,6 @@
 FEMA_REQUEST_URL = "https://msc.fema.gov/portal/advanceSearch"
 
-FEMA_DOWNLOAD_URL = "https://msc.fema.gov/portal/downloadProduct?productTypeID=NFHL&productSubTypeID=NFHL_STATE_DATA&productID={}"
+FEMA_DOWNLOAD_URL = "https://hazards.fema.gov/nfhlv2/output/State/{}"
 
 FEMA_REQUEST_DATA = {
         "affiliate": "fema",
